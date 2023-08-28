@@ -1,0 +1,6 @@
+127.0.0.1 - - [28/Aug/2023:17:36:56 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:36:57 +0900] "GET /WebMarket/products.jsp HTTP/1.1" 200 2539
+127.0.0.1 - - [28/Aug/2023:17:53:28 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:53:29 +0900] "GET /WebMarket/addProduct.jsp HTTP/1.1" 200 3036
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:54:19 +0900] "POST /WebMarket/processAddProduct.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [28/Aug/2023:17:54:19 +0900] "GET /WebMarket/products.jsp HTTP/1.1" 200 3036

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="dto.Product"%>
+<%@ page import="dao.ProductRepository" %>
 <jsp:useBean id="productDAO" class="dao.ProductRepository"
 	scope="session" />
 <!DOCTYPE html>
@@ -19,14 +20,18 @@
 	</div>
 	<%
 	String id = request.getParameter("id");
-	Product product = productDAO.getProductById(id);
+	ProductRepository dao = ProductRepository.getInstance();
+	Product product = dao.getProductById(id);
 	%>
+	
 
 	<div class="container">
 
 		<div class="row">
 			<div class="col">
 				<div class="col-md-6">
+				<img src="C:/upload<%=product.getFilename()%>" style="width: 100%"
+					alt="My Image" class = "w-75 p-3">
 					<h3><%=product.getPname()%></h3>
 					<p><%=product.getDescription()%>
 					<p>

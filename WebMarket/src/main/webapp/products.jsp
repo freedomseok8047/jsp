@@ -34,7 +34,7 @@
 				<h4>
 					[<%=product.getCategory()%>]
 				</h4>
-				<img src="./resources/images/<%=product.getFilename()%>" style=""
+				<img src="C:/upload<%=product.getFilename()%>" style="width: 100%"
 					alt="My Image" class = "w-75 p-3">
 				<p>
 				<h3><%=product.getPname()%></h3>
