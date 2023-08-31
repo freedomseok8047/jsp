@@ -1,0 +1,44 @@
+
+8월 29, 2023 09:18:37.910 NEW SESSION
+8월 29, 2023 09:18:37.910 [8956:8172:0829/091837.909:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 29, 2023 09:18:37.911 [8956:8172:0829/091837.909:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 29, 2023 09:18:37.911 [8956:8172:0829/091837.909:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+8월 29, 2023 14:01:50.753 NEW SESSION
+8월 29, 2023 14:01:50.753 [10476:7104:0829/140150.749:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for beacons.gcp.gvt2.com failed:
+8월 29, 2023 14:01:50.754 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 14:01:50.755 ERROR: Time is after notAfter
+8월 29, 2023 14:01:50.756 
+8월 29, 2023 14:01:50.756 
+8월 29, 2023 14:41:22.795 [10888:1844:0829/144122.795:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c33.gcp.gvt2.com failed:
+8월 29, 2023 14:41:22.796 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 14:41:22.796 ERROR: Time is after notAfter
+8월 29, 2023 14:41:22.796 
+8월 29, 2023 14:41:22.797 
+8월 29, 2023 14:43:11.140 [10888:1844:0829/144311.140:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c11.gcp.gvt2.com failed:
+8월 29, 2023 14:43:11.142 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 14:43:11.142 ERROR: Time is after notAfter
+8월 29, 2023 14:43:11.143 
+8월 29, 2023 14:43:11.144 
+8월 29, 2023 15:32:30.931 [9024:6568:0829/153230.931:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 29, 2023 15:32:30.932 [9024:6568:0829/153230.931:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+8월 29, 2023 15:34:44.622 [9024:8172:0829/153444.621:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for beacons.gcp.gvt2.com failed:
+8월 29, 2023 15:34:44.623 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 15:34:44.623 ERROR: Time is after notAfter
+8월 29, 2023 15:34:44.624 
+8월 29, 2023 15:34:44.625 
+8월 29, 2023 15:55:13.37 [9024:8172:0829/155513.037:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c11.gcp.gvt2.com failed:
+8월 29, 2023 15:55:13.38 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 15:55:13.39 ERROR: Time is after notAfter
+8월 29, 2023 15:55:13.40 
+8월 29, 2023 15:55:13.40 
+8월 29, 2023 15:55:23.952 [9024:8172:0829/155523.951:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c33.gcp.gvt2.com failed:
+8월 29, 2023 15:55:23.953 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 15:55:23.953 ERROR: Time is after notAfter
+8월 29, 2023 15:55:23.954 
+8월 29, 2023 15:55:23.955 
+8월 29, 2023 15:55:26.179 [9024:8172:0829/155526.179:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for e2c6.gcp.gvt2.com failed:
+8월 29, 2023 15:55:26.180 ----- Certificate i=0 (CN=*.gcp.gvt2.com) -----
+8월 29, 2023 15:55:26.181 ERROR: Time is after notAfter
+8월 29, 2023 15:55:26.182 
+8월 29, 2023 15:55:26.183 

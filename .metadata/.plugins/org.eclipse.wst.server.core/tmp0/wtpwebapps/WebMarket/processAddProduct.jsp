@@ -10,7 +10,6 @@
 <%
 	request.setCharacterEncoding("utf-8");
 
-	String filename ="";
 	String realFolder ="C:\\upload";
 	int maxSize = 5*1024*1024;
 	String encType ="utf-8";
@@ -54,9 +53,10 @@
 	newProduct.setUnitPrice(price);
 	newProduct.setDescription(description);
 	newProduct.setManufacturer(manufacturer);
+	newProduct.setUnitsInStock(stock);
 	newProduct.setCategory(category);
 	newProduct.setCondition(condition);
-	newProduct.setFilename(filename);
+	newProduct.setFilename(fileName);
 	
 	dao.addProduct(newProduct);
 	

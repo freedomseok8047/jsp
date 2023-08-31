@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="dto.Product"%>
-<%@ page import="dao.ProductRepository" %>
+<%@ page import="dao.ProductRepository"%>
 <jsp:useBean id="productDAO" class="dao.ProductRepository"
 	scope="session" />
 <!DOCTYPE html>
@@ -23,15 +23,16 @@
 	ProductRepository dao = ProductRepository.getInstance();
 	Product product = dao.getProductById(id);
 	%>
-	
+
 
 	<div class="container">
 
 		<div class="row">
 			<div class="col">
+				<img src="/upload/<%=product.getFilename()%>" style="width: 100%"
+					alt="My Image">
 				<div class="col-md-6">
-				<img src="C:/upload<%=product.getFilename()%>" style="width: 100%"
-					alt="My Image" class = "w-75 p-3">
+
 					<h3><%=product.getPname()%></h3>
 					<p><%=product.getDescription()%>
 					<p>
@@ -44,7 +45,7 @@
 						<%=product.getCategory()%>
 					<p>
 						<b>재고 수</b> :
-						<%=product.getUnitsInStock()%>
+						<%=product.getUnitsInStock()%> 개
 					<h4 class="font-weight-bold text-secondary"><%=product.getUnitPrice()%>원
 					</h4>
 					<p>
@@ -53,8 +54,8 @@
 							&raquo;</a>
 				</div>
 			</div>
-			<img src="resources/images/<%=product.getFilename()%>" style=""
-				alt="My Image">
+		<%-- 	<img src="resources/images/<%=product.getFilename()%>" style=""
+				alt="My Image" class="w-75 p-3"> --%>
 		</div>
 		<hr>
 	</div>
