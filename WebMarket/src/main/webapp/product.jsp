@@ -1,15 +1,15 @@
-<%@page import="dao.ProductRepository"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="dto.Product"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="dao.ProductRepository"%>
 <%-- <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" /> --%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>상품 상세 정보</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" >
 <script type="text/javascript">
 	function addToCart(){
 		if(confirm("상품을 장바구니에 추가하기겠습니까?")){
