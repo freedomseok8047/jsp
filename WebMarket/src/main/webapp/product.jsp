@@ -18,6 +18,8 @@
 			document.addForm.reset();
 		}
 	}
+	
+	
 </script>
 </head>
 <body>

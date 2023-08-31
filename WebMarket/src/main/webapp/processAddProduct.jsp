@@ -20,6 +20,7 @@
 		newProduct.setProductId(multi.getParameter("productId"));
 		newProduct.setPname(multi.getParameter("name"));
 		
+		
 		String unitPrice = multi.getParameter("unitPrice");
 		Integer price;
 		if(unitPrice.isEmpty()){

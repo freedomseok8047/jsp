@@ -16,6 +16,7 @@
 		response.sendRedirect("products.jsp");
 	}
 	
+	
 	ArrayList<Product> cartList = (ArrayList<Product>)
 	session.getAttribute("cartlist");
 	Product goodsQnt = new Product();
