@@ -1,74 +1,97 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@page import="dto.Product"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="dao.ProductRepository"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.sql.*"%>
 <%-- <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" /> --%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>상품 상세 정보</title>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" >
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css">
 <script type="text/javascript">
-	function addToCart(){
-		if(confirm("상품을 장바구니에 추가하기겠습니까?")){
+	function addToCart() {
+		if (confirm("상품을 장바구니에 추가하기겠습니까?")) {
 			document.addForm.submit();
-		}else{
+		} else {
 			document.addForm.reset();
 		}
 	}
-	
-	
 </script>
 </head>
 <body>
-<%@ include file = "menu.jsp" %>
-<%-- <jsp:include page = "menu.jsp"> --%>
+	<%@ include file="menu.jsp"%>
+	<%-- <jsp:include page = "menu.jsp"> --%>
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">
-				상품 상세 정보
-			</h1>
+			<h1 class="display-3">상품 상세 정보</h1>
 		</div>
 	</div>
+	<%@ include file="dbconn.jsp"%>
 	<%
-		String id = request.getParameter("id");
-		ProductRepository dao = ProductRepository.getInstance();
-		Product product = dao.getProductById(id);
+	String productId = request.getParameter("id");
+
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	String sql = "select * from product where p_id=?";
+	pstmt = conn.prepareStatement(sql);
+	pstmt.setString(1, productId);
+	rs = pstmt.executeQuery();
+	if (rs.next()) {
+		/* ProductRepository dao = ProductRepository.getInstance();
+		Product product = dao.getProductById(id); */
 	%>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<img src="/upload/<%=product.getFilename()%>" style="width:100%;">
+				<img src="/upload/<%=rs.getString("p_fileName")%>"
+					style="width: 100%;">
 			</div>
 			<div class="col-md-6">
-				<h3><%=product.getPname() %></h3>
-				<p><%=product.getDescription() %></p>
-				
+				<h3><%=rs.getString("p_name")%></h3>
+				<p><%=rs.getString("p_description")%></p>
+
 				<p>
-					<b>상품 코드 : </b>
-					<span class="badge badge-danger">
-						<%=product.getProductId() %>
+					<b>상품 코드 : </b> <span class="badge badge-danger"> <%=rs.getString("p_id")%>
 					</span>
 				</p>
-				<p><b>제조사</b> : <%=product.getMenufacturer() %></p>
-				<p><b>분류</b> : <%=product.getCategory() %></p>
-				<p><b>재고 수</b> : <%=product.getUnitsInStock() %></p>
-				<h4><%=product.getUnitPrice() %>원</h4>
 				<p>
-					<form action="./addCart.jsp?id=<%=product.getProductId() %>" 
-						method="post" name="addForm">
-						<a href="#" class="btn btn-info" onclick="addToCart()">상품 주문 &raquo;</a>
-						<a href="./cart.jsp" class="btn btn-warning">장바구니 &raquo;</a>
-						<a href="./products.jsp" class="btn btn-secondary">상품 목록 &raquo;</a>
-					</form></p>
+					<b>제조사</b> :
+					<%=rs.getString("p_manufacturer")%></p>
+				<p>
+					<b>분류</b> :
+					<%=rs.getString("p_category")%></p>
+				<p>
+					<b>재고 수</b> :
+					<%=rs.getString("p_unitsInStock")%></p>
+				<h4><%=rs.getString("p_unitPrice")%>원
+				</h4>
+				<p>
+				<form action="./addCart.jsp?id=<%=rs.getString("p_id")%>"
+					method="post" name="addForm">
+					<a href="#" class="btn btn-info" onclick="addToCart()">상품 주문
+						&raquo;</a> <a href="./cart.jsp" class="btn btn-warning">장바구니
+						&raquo;</a> <a href="./products.jsp" class="btn btn-secondary">상품
+						목록 &raquo;</a>
+				</form></p>
 				
+				</div>
 			</div>
+			<hr>
 		</div>
-		<hr>
-	</div>
-<%@ include file = "footer.jsp" %>
+		<%
+				}
+				if (rs != null)
+				rs.close();
+				if (pstmt != null)
+				pstmt.close();
+				if (conn != null)
+				conn.close();
+				%>
+		<%@ include file="footer.jsp"%>
 </body>
 </html>
 
