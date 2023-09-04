@@ -7,7 +7,12 @@ import dto.Book;
 
 public class BookRepository {
 	
+	private static BookRepository instance =new BookRepository();
+	public static BookRepository getInstance() {
+		return instance;
+	}
 	private ArrayList<Book> listOfBooks = new ArrayList<Book>();
+	
 	
 	public BookRepository() {
 		Book book1 =new Book("B1234","HTML5+CSS3",15000);
@@ -19,7 +24,7 @@ public class BookRepository {
 		book1.setTotalPages(700);
 		book1.setReleaseDate("8월/22년");
 		book1.setCondition("New");
-		book1.setFilename("P1234.jpg");
+		book1.setFilename("ISBN1234.jpg");
 		
 		
 		Book book2 =new Book("B1235","쉽게 배우는 자바 프로그래밍",15000);
@@ -31,7 +36,7 @@ public class BookRepository {
 		book2.setTotalPages(700);
 		book2.setReleaseDate("8월/22년");
 		book2.setCondition("New");
-		book2.setFilename("P1235.jpg");
+		book2.setFilename("ISBN1235.jpg");
 		
 		Book book3 =new Book("B1236","스프링4 입문",27000);
 		book3.setDescription("스프링은 단순히 사용 방법만 익히는 것보다 아키텍처를 어떻게 이해하고 설계하는지가 더 중요합니다. 예제를 복사에서 붙여넣는 식으로는 실제 개발에서 스스로 활용할수 없습니다.");
@@ -42,7 +47,7 @@ public class BookRepository {
 		book3.setTotalPages(700);
 		book3.setReleaseDate("8월/22년");
 		book3.setCondition("New");
-		book3.setFilename("P1236.jpg");
+		book3.setFilename("ISBN1236.jpg");
 		
 		listOfBooks.add(book1);
 		listOfBooks.add(book2);
@@ -62,4 +67,8 @@ public class BookRepository {
 			}
 			return bookById;
 		}	
+		
+		public void addBook(Book book) {
+			listOfBooks.add(book);
+		}
 }

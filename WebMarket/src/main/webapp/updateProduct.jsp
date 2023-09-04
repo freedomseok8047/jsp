@@ -110,7 +110,7 @@
 		<div class="form-group row">
 		<div class ="col-sm-offset-2 col-sm-10 ">
 			<input type="submit" class ="btn btn-primary" value="등록">
-		</div>
+		</div>Up
 		</div>
 		</form>
 	</div>

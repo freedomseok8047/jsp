@@ -1,4 +1,5 @@
 INDEX VERSION 1.134
+<<<<<<< Updated upstream
 C:\Users\T-user\Desktop\jsp\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4256916384.index
 \JSPBook\src\main\java
 C:\Users\T-user\Desktop\jsp\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\245354245.index
@@ -39,3 +40,11 @@ C:\Users\T-user\Desktop\jsp\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jsps
 \Exercise\src\main\java
 C:\Users\T-user\Desktop\jsp\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\166857500.index
 \Exercise\src\main\java
+=======
+C:\Users\it\Documents\GitHub\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\821668228.index
+\WebMarket\src\main\java
+C:\Users\it\Documents\GitHub\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1309733049.index
+\BookMarket\src\main\java
+C:\Users\it\Documents\GitHub\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3835712225.index
+\JSPBook\src\main\java
+>>>>>>> Stashed changes

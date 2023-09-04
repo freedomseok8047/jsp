@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +8,10 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>HOME</title>
 </head>
 <body>
-	<%!String greeting = "µµ¼­ À¥ ¼îÇÎ¸ô";
+	<%!String greeting = "ë„ì„œ ì›¹ ì‡¼í•‘ëª°";
 	String tagline = "Welcome to Book Market!";%>
 	
 	<%@ include file = "menu.jsp" %>
