@@ -1,47 +1,35 @@
-<<<<<<< Updated upstream
-INDEX VERSION 1.134+C:\Users\T-user\Desktop\jsp\jsp\.metadata\.plugins\org.eclipse.jdt.core
-1561259185.index
-2290660991.index
-1088540399.index
-1865797976.index
-259125314.index
-2530802075.index
-2626047944.index
-3511309301.index
-4233574974.index
-=======
 INDEX VERSION 1.134+C:\Users\it\Documents\GitHub\jsp\.metadata\.plugins\org.eclipse.jdt.core
-1517055054.index
-4078305705.index
 2769115919.index
+4078305705.index
+1517055054.index
 2459352595.index
 445453901.index
 2348808517.index
 3842698167.index
-1648387864.index
 233566688.index
+1648387864.index
 1023134312.index
 311846666.index
 1160401259.index
 2154656765.index
 387797082.index
 1753251062.index
-494687928.index
 1561259185.index
+494687928.index
 1088540399.index
-49280623.index
 2530802075.index
+49280623.index
 2065233370.index
 1173320066.index
-2806033644.index
 3236522571.index
-3526022959.index
 401183165.index
+3526022959.index
+2806033644.index
 581443797.index
 259125314.index
 233671833.index
-3284379601.index
 1719796113.index
+3284379601.index
 914161222.index
 2427504673.index
 2934199502.index
@@ -53,8 +41,8 @@ INDEX VERSION 1.134+C:\Users\it\Documents\GitHub\jsp\.metadata\.plugins\org.ecli
 3360495123.index
 1112633541.index
 3869083607.index
-800987333.index
 242951790.index
+800987333.index
 1535770265.index
 1503947585.index
 2718082734.index
@@ -69,5 +57,5 @@ INDEX VERSION 1.134+C:\Users\it\Documents\GitHub\jsp\.metadata\.plugins\org.ecli
 944029521.index
 624141825.index
 2774920208.index
+3511309301.index
 2626047944.index
->>>>>>> Stashed changes
